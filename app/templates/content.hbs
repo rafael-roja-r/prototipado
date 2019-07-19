@@ -1,0 +1,36 @@
+<nav class="top-nav grey darken-3 mainContent">
+	<div class="page-title">
+		{{title}}
+	</div>
+</nav>
+<div class="row mainContent">
+	<div class="col s12">
+		{{#switch state}}
+			{{#case "liquidacion"}}
+				<div id="{{state}}">
+					<div class="block"></div>
+				</div>
+			{{/case}}
+			{{#case "EmpresaInformacion"}}
+				<div id="{{state}}">
+					<div class="block"></div>
+				</div>
+			{{/case}}
+			{{#case "dtGastosO"}}
+				<div id="{{state}}">
+					<div class="block"></div>
+				</div>
+			{{/case}}
+			{{#case "Utilidades"}}
+				<div id="{{state}}">
+					<div class="block"></div>
+				</div>
+			{{/case}}
+			{{#case "costos"}}
+				<div id="{{state}}">
+					<div class="block"></div>
+				</div>
+			{{/case}}
+		{{/switch}}
+	</div>
+</div>

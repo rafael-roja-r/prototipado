@@ -1,0 +1,41 @@
+<div class="row">
+	<div class="col s12">
+		<div class="card-panel">
+			<div class="card-content">
+				<div id="tblGastosO">
+					<table class="bordered responsive-table">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Clasificacion</th>
+								<th>Concepto</th>
+								<th>Valor</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each gastos}}
+							<tr>
+								<td>
+									<input type="checkbox" name="productSelection">
+									<label for="productSelection"></label>
+								</td>
+								<td>{{clasificacion}}</td>
+								<td>{{concepto}}</td>
+								<td s>{{valor}}</td>
+							</tr>
+							{{/each}}
+						</tbody>
+						<tfoot>
+							<tr>
+								<td></td>
+								<td><b>Total Gastos Administrativos:</b> $112,028.00</td>
+								<td><b>Total Gastos Ventas:</b> $9,200.00</td>
+								<td><b>Total Gastos Operacionales:</b> $150,700.00</td>
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

@@ -1,0 +1,90 @@
+Arguments: 
+  C:\Program Files\nodejs\node.exe C:\Program Files (x86)\Yarn\bin\yarn.js dev
+
+PATH: 
+  C:\Users\WilSalas\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\local\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\usr\bin;C:\Program Files\Git\mingw64\bin;C:\Program Files\Git\usr\bin;C:\Users\WilSalas\bin;C:\Program Files (x86)\Common Files\Oracle\Java\javapath;C:\Windows\system32;C:\Windows;C:\Windows\System32\Wbem;C:\Windows\System32\WindowsPowerShell\v1.0;C:\Windows\System32\OpenSSH;C:\Program Files\Git\cmd;C:\Program Files\nodejs;C:\Program Files (x86)\Yarn\bin;C:\Users\WilSalas\AppData\Local\Microsoft\WindowsApps;C:\Users\WilSalas\AppData\Local\Programs\Microsoft VS Code\bin;C:\Users\WilSalas\AppData\Roaming\npm;C:\Users\WilSalas\AppData\Local\Yarn\bin;C:\Program Files\Git\usr\bin\vendor_perl;C:\Program Files\Git\usr\bin\core_perl
+
+Yarn version: 
+  1.9.4
+
+Node version: 
+  10.9.0
+
+Platform: 
+  win32 x64
+
+Trace: 
+  TypeError [ERR_INVALID_ARG_TYPE]: The "path" argument must be of type string. Received type object
+      at assertPath (path.js:39:11)
+      at Object.isAbsolute (path.js:406:5)
+      at module.exports.exports.default (C:\Program Files (x86)\Yarn\lib\cli.js:91259:16)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:52276:63
+      at Generator.next (<anonymous>)
+      at step (C:\Program Files (x86)\Yarn\lib\cli.js:92:30)
+      at C:\Program Files (x86)\Yarn\lib\cli.js:103:13
+
+npm manifest: 
+  {
+    "private": true,
+    "engines": {
+      "node": ">=4"
+    },
+    "devDependencies": {
+      "@babel/core": "^7.0.0",
+      "@babel/preset-env": "^7.0.0",
+      "babel-core": "^6.4.0",
+      "babel-preset-es2015": "^6.3.13",
+      "babel-register": "^6.5.2",
+      "browser-sync": "^2.2.1",
+      "del": "^2.2.0",
+      "dependencies": {
+        "handlebars": "^4.0.11",
+        "jquery": "~2.1.1",
+        "materialize": "^0.100.2"
+      },
+      "gulp": "^3.9.0",
+      "gulp-autoprefixer": "^3.0.1",
+      "gulp-babel": "^6.1.3",
+      "gulp-cache": "^0.4.2",
+      "gulp-cssnano": "^2.0.0",
+      "gulp-declare": "^0.3.0",
+      "gulp-define-module": "^0.1.5",
+      "gulp-eslint": "^3.0.0",
+      "gulp-filter": "^4.0.0",
+      "gulp-handlebars": "^5.0.2",
+      "gulp-htmlmin": "^3.0.0",
+      "gulp-if": "^2.0.2",
+      "gulp-imagemin": "^3.0.1",
+      "gulp-load-plugins": "^1.2.4",
+      "gulp-plumber": "^1.0.1",
+      "gulp-sass": "^3.0.0",
+      "gulp-size": "^2.1.0",
+      "gulp-sourcemaps": "^2.2.0",
+      "gulp-uglify": "^2.0.0",
+      "gulp-useref": "^3.0.0",
+      "gulp-wrap": "^0.14.0",
+      "main-bower-files": "^2.5.0",
+      "run-sequence": "^1.2.2",
+      "wiredep": "^4.0.0"
+    },
+    "eslintConfig": {
+      "env": {
+        "es6": true,
+        "node": true,
+        "browser": true,
+        "jquery": true
+      },
+      "rules": {
+        "quotes": [
+          2,
+          "single"
+        ]
+      }
+    }
+  }
+
+yarn manifest: 
+  No manifest
+
+Lockfile: 
+  No lockfile

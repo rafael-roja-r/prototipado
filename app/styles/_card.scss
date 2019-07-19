@@ -1,0 +1,44 @@
+$cardImageHeight: 350px;
+$textBackground: rgba(0,0,0,0.5);
+$fontSizeBase: 14px;
+
+@mixin border-radius($radius){
+	-webkit-border-radius: $radius;
+	-moz-border-radius: $radius;
+	-ms-border-radius: $radius;
+	border-radius: $radius;
+}
+@function getFontSize($container,$factor,$scale){
+	@return ($container/$factor)*$scale;
+}
+.base-action{
+	font-size: getFontSize($cardImageHeight,25,1.2);
+	border: 1px solid black;
+	color: white!important;
+	padding: 3px;
+	@include border-radius(10px);
+}
+.cardImage{
+	.card-image{
+		img{
+			height: $cardImageHeight;
+		}
+	}
+	.card-title{
+		.text-title{
+			background-color: $textBackground;
+			padding: 3px;
+			font-size: getFontSize($cardImageHeight,25,1.5);
+		}
+	}
+	.card-action{
+		.primary-action{
+			@extend .base-action;
+			background-color: gray;
+		}
+		.warning-action{
+			@extend .base-action;
+			background-color: red;
+		}
+	}
+}

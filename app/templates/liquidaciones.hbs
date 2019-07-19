@@ -1,0 +1,113 @@
+<div class="row">
+	<div class="col s12 l6 m6">
+		<div class="card-panel">
+			<div class="card-content">
+				<div class="row">
+					<h5 class="col s12">Liquidacion de Ventas</h5>
+				</div>
+				<div class="row">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s12 m12 l12">
+					          <input id="articulo" type="text" class="validate">
+					          <label for="articulo">Articulo</label>
+					        </div>
+					    </div>
+					    <div class="row">
+					        <div class="input-field col s12 m3 l4">
+					          <input id="cantidad" type="number" class="validate">
+					          <label for="cantidad">Cantidad</label>
+					        </div>
+					        <div class="input-field col s12 m5 l4 offset-m1 offset-l1">
+					          <input id="unitario" type="number" class="validate">
+					          <label for="unitario">Val. Unitario</label>
+					        </div>
+					        <div class="col s12 m1 l1 offset-l1">
+					        	<a class="btn-floating btn-large waves-effect waves-light grey"><i class="material-icons">send</i></a>
+					        </div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="col s12 l6 m6">
+		<div class="card-panel">
+			<div class="card-content">
+				<div class="row">
+					<h5 class="col s12">Liquidacion de Comisiones sobre Ventas</h5>
+				</div>
+				<div class="row">
+					<form class="col s12">
+						<div class="row">
+							<div class="input-field col s12 m8 l8">
+					          <input id="Trabajor" type="text" class="validate">
+					          <label for="Trabajor">Producto</label>
+					        </div>
+					        <div class="input-field col s12 m3 l3 offset-m1 offset-l1">
+					          <input id="unidades" type="number" class="validate">
+					          <label for="unidades">Unidades</label>
+					        </div>
+					    </div>
+					    <div class="row">
+					        <div class="input-field col s12 m6 l6">
+					          <input id="unitario" type="number" class="validate">
+					          <label for="unitario">$45 x Unidad Vendida</label>
+					        </div>
+					        <div class="col s12 m1 l1 offset-l1">
+					        	<a class="btn-floating btn-large waves-effect waves-light grey"><i class="material-icons">send</i></a>
+					        </div>
+
+						</div>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>
+<div class="row">
+	<div class="col s12">
+		<div class="card-panel">
+			<div class="card-content">
+				<div class="row">
+					<h5 class="col s12">Liquidacion de Nómina</h5>
+				</div>
+				<div id="tblLiquidacion">
+					<table class="bordered responsive-table">
+						<thead>
+							<tr>
+								<th></th>
+								<th>Trabajador</th>
+								<th>Salario</th>
+								<th>Auxilio de Transporte</th>
+								<th>Comision</th>
+								<th>Total</th>
+							</tr>
+						</thead>
+						<tbody>
+							{{#each liquidacion}}
+							<tr>
+								<td>
+									<input type="checkbox" name="productSelection">
+									<label for="productSelection"></label>
+								</td>
+								<td>{{trabajador}}</td>
+								<td>{{salario}}</td>
+								<td>{{auxilio}}</td>
+								<td>{{auxilio}}</td>
+								<td>{{total}}</td>
+							</tr>
+							{{/each}}
+						</tbody>
+						<tfoot>
+							<tr>
+
+							</tr>
+						</tfoot>
+					</table>
+				</div>
+			</div>
+		</div>
+	</div>
+</div>

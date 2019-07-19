@@ -1,0 +1,17 @@
+$titulosBackground: rgba(255,51,0,0.5);
+$fontSizeBase: 14px;
+
+.titulos-base{
+	font-size: $fontSizeBase*1.2;
+	border: 2px solid black;
+	color: black;
+}
+
+.block,.mainBlock{
+	.card-content{
+		width:100%;
+	}
+	.white-text{
+		font-size:18px;
+	}
+}
